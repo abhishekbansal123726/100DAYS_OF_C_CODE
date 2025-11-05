@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int length, breadth;
+    int length, breadth, area, perimeter;
 
-    // Input length and breadth
-    printf("Enter length and breadth: ");
+    // Taking the input values for the length and breadth from the user
+    printf("Enter length and breadth of rectangle: ");
     scanf("%d %d", &length, &breadth);
 
-    // Calculations
-    int area = length * breadth;
-    int perimeter = 2 * (length + breadth);
+    // Calculating area and lenght for the rectangle 
+    area = length * breadth;
+    perimeter = 2 * (length + breadth);
 
-    // Output
+    // Giving the output 
     printf("Area=%d, Perimeter=%d\n", area, perimeter);
 
     return 0;
