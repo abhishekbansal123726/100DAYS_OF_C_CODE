@@ -1,18 +1,18 @@
 #include <stdio.h>
-#define PI 3.1416   // define constant value for PI
+#define PI 3.14   // Giving the value of pi for calculating 
 
 int main() {
     float radius, area, circumference;
 
-    // Input radius
-    printf("Enter radius: ");
+    //  Taking the value of radius from user 
+    printf("Enter radius of circle: ");
     scanf("%f", &radius);
 
-    // Calculations
+    // Calculating area and circumference
     area = PI * radius * radius;
     circumference = 2 * PI * radius;
 
-    // Output (rounded to 2 decimal places)
+    // Displaying the output 
     printf("Area=%.2f, Circumference=%.2f\n", area, circumference);
 
     return 0;
