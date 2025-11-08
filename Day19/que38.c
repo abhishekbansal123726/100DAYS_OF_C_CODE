@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int num, sum = 0, digit;
+
+    // Taking input
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // Extracting digits and add
+    while (num > 0) {
+        digit = num % 10;   // get last digit
+        sum += digit;       // add to sum
+        num = num / 10;     // remove last digit
+    }
+
+    printf("%d\n", sum);
+
+    return 0;
+}
